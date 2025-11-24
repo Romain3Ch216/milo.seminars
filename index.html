@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>MILO seminars</title>
+        <meta charset="UTF-8" />
+        <meta name="referrer" content="none" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<meta http-equiv="Content-Security-Policy" content="script-src 'self'">
+        <link href="static/css/milo.at.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <header>
+        </header>
+
+        <nav>
+            <h3 class="navlink" id="sitename"><a href="">MILO seminars</a></h3>
+        </nav>
+
+        <div class="banner">
+          <div class="banner-content">
+            <h1>MILO seminars</h1>
+          </div>
+        </div>
+
+    <div>
+    <div class="description">
+        <p>
+            <strong>
+            MILO seminars are scientific seminars about mathematics and computing, e.g. machine learning, 
+            applied or applicable to Earth observation.
+            </strong> 
+            The seminars are held by videoconference every month or so, usually on Tuesdays between 1:30pm and 2:30pm. 
+        </p>
+        <p>
+            The seminars are organized within the <a href="https://www.comet-cnes.fr/tsi" target="_blank">COMET TSI</a>, a community of experts in signal and image processing 
+            initiated by <a href="https://cnes.fr/fr" target="_blank">CNES</a>, 
+            the French spatial agency, in order to gather academic researchers and engineers 
+            from the space industry in France.
+        </p>
+        <p>
+            Coming and past seminars are listed below:
+        </p>
+        <ul>
+            <li class="wo">
+                <details>
+                    <summary>
+                        #10 | June 17 2025,
+                        <strong>Satellite image restoration with compressive variational autoencoders and uncertainty quantification</strong>,
+                        <em>Maud Biquard (ISAE-SUPAERO / CNES).</em>
+                    </summary>
+                    <p><em>Neural networks have been successfully applied to image restoration tasks. 
+                        The standard approach directly learns to predict the restored image from the degraded one in a supervised manner. 
+                        However, such methods are often unsuitable for satellite image restoration, as they lack interpretability and require retraining for 
+                        each specific sensor. Alternative approaches leverage neural networks to learn a prior over target images, which is then integrated 
+                        into a classical variational optimization framework for solving inverse problems. This allows for restoring images from different sources 
+                        using the same trained network. We focus on a line of work that looks for the solution of the restoration task in the encoded - or latent - 
+                        space of a trained generative model. We introduce a variational Bayes framework, VBLE-xz (Variational Bayes Latent Estimation), which enables 
+                        approximating the posterior distribution of the inverse problem within variational autoencoders (VAEs). Furthermore, we adopt compressive VAEs, 
+                        whose lightweight architecture ensures a scalable restoration process while effectively regularizing the inverse problem through their hyperprior. 
+                        Experimental results on satellite images highlight the benefits of VBLE-xz over state-of-the-art deep learning baselines for satellite image 
+                        restoration.</em></p>
+                  </details> 
+            </li>
+
+            <li class="wo">
+                <details>
+                    <summary>
+                        #9 | May 27 2025,
+                        <strong>What to align in contrastive multimodal learning?</strong>,
+                        <em>Benoit Dufumier (CEA) and Javiera Castillo-Navarro (CNAM).</em>
+                    </summary>
+                    <p><em>Humans perceive the world through multisensory integration, blending the information of different modalities to adapt 
+                        their behavior. Contrastive learning offers an appealing solution for multimodal self-supervised learning. 
+                        Indeed, by considering each modality as a different view of the same entity, it learns to align features of 
+                        different modalities in a shared representation space. However, this approach is intrinsically limited as it 
+                        only learns shared or redundant information between modalities, while multimodal interactions can arise in other ways. 
+                        In this work, we introduce CoMM, a Contrastive Multimodal learning strategy that enables the communication between modalities 
+                        in a single multimodal space. Instead of imposing cross- or intra- modality constraints, we propose to align multimodal 
+                        representations by maximizing the mutual information between augmented versions of these multimodal features. 
+                        Our theoretical analysis shows that shared, synergistic and unique terms of information naturally emerge from this 
+                        ormulation, allowing us to estimate multimodal interactions beyond redundancy. We test CoMM both in a controlled and 
+                        in a series of real-world settings: in the former, we demonstrate that CoMM effectively captures redundant, unique and 
+                        synergistic information between modalities. In the latter, CoMM learns complex multimodal interactions and achieves 
+                        state-of-the-art results on the six multimodal benchmarks.</em></p>
+                  </details> 
+            </li>
+
+            <li class="wo">
+                <details>
+                    <summary>
+                        #8 | April 15 2025,
+                        <strong>Gaussian Splatting for Earth Observation</strong>,
+                        <em>Luca Savant (Turin University).</em>
+                    </summary>
+                    <p>
+                        <em>
+                            Recently, Gaussian splatting has emerged as a strong alternative to NeRF, 
+                            demonstrating impressive 3D modeling capabilities while requiring only a fraction of the 
+                            training and rendering time. In this paper, we show how the standard Gaussian splatting framework 
+                            can be adapted for remote sensing, retaining its high efficiency. This enables us to achieve state-of-the-art 
+                            performance in just a few minutes, compared to the day-long optimization required by the best-performing 
+                            NeRF-based Earth observation methods. The proposed framework incorporates remote-sensing improvements from EO-NeRF, 
+                            such as radiometric correction and shadow modeling, while introducing novel components, including sparsity, 
+                            view consistency, and opacity regularizations.
+                        </em>
+                    </p>
+            </li>
+
+            <li class="wo">
+                <details>
+                    <summary>
+                        #7 | March 11 2025,
+                        <strong>Learning for Species Distribution Modeling</strong>,
+                        <em>
+                        Emilia Arens, Johannes Dollinger and Damien Robert (EcoVision lab, Zurich University).
+                        </em>
+                    </summary>
+                    <p>
+                        <em>
+                            Reliably modeling the distribution of species at a large scale is critical for understanding the drivers 
+                            of biodiversity loss in our rapidly changing climate. Specifically, the task involves predicting the probability that 
+                            a species will occur in a particular location given the prevailing environmental conditions.Traditional approaches from 
+                            the field of ecology often tackle the task from a statistical perspective, fitting a per-species density function around 
+                            the known occurrences in feature space. These features are hand-crafted from environmental data, and spatial reasoning 
+                            is limited to the exact location of a known occurrence. <br>
+                            An expanding body of research leverages deep neural networks to learn features in an end-to-end manner 
+                            for jointly modeling the distribution of multiple species, capturing potential interactions. These models can derive 
+                            rich representations from diverse inputs, including climatic rasters, satellite imagery, and species interaction graphs.
+                            In this talk, we will introduce the task of modeling species distributions and give a brief overview of established approaches 
+                            in the field, along with their limitations. We will then explore in more detail how the potential of deep learning can help 
+                            to overcome these limitations and arrive at a more holistic view of species distribution models.
+                        </em>
+                    </p>
+            </li>
+
+            <li class="wo">
+                <details>
+                    <summary>
+                        #6 | January 21 2025,
+                        <strong>Learning easy-to-use representations of Satellite Image Time Series for land surface monitoring</strong>,
+                        <em>
+                        Iris Dumeur (CESBIO, Toulouse University).
+                        </em>
+                    </summary>
+                    <p>
+                        <em>
+                            Up-to-date  and precise mapping of the Earth's surface is critical for monitoring  and mitigating the effects 
+                            of global warming. For about a decade, Earth  Observation (EO) missions have been providing frequently high-resolution  
+                            multispectral imagery of the entire  globe. To exploit the resulting Satellite Image Time Series (SITS),  
+                            Deep Neural Networks have become increasingly popular. Nonetheless,  these methods require large amounts of labeled data 
+                            for training,  limiting their scalability across diverse geographic regions  and time periods. In response, 
+                            there is growing support for  pre-training large deep neural networks, known as foundation models,  
+                            using self-supervised learning techniques. These techniques allow models  to learn high-level representations 
+                            of input data without  the need for labeled datasets. Once the model is pre-trained, it is  utilized to provide 
+                            representations that serve as inputs to shallow models in many downstream tasks. <br> 
+                            This  presentation focuses on the development of easy-to-use representations  of SITS for climate experts and 
+                            geoscientists. In particular, we propose  a novel DNN architecture (ALISE) capable of generating aligned and 
+                            fixed-size representations from inherently  irregular and unaligned SITS input data. In addition, we explore hybrid  
+                            self-supervised learning strategies to improve the extraction of high  semantic features in the representations. 
+                            For the downstream  applications considered, a single linear layer is trained  on the representations obtained by 
+                            the pre-trained and frozen model,  demonstrating the simplicity of exploiting the ALISE representations.
+                        </em>
+                    </p>
+            </li>
+
+            <li class="wo">
+                <details>
+                    <summary>
+                        #5 | December 3 2024,
+                        <strong>
+                        Towards Meta-Pruning via Optimal Transport</strong>,
+                        <em>
+                        Olin Geimer and Alexander Theus (Yale University et ETH Zurich).
+                        </em>
+                    </summary>
+                    <p>
+                        <em>
+                            Structural pruning of neural networks conventionally relies on identifying and  
+                            discarding less important neurons, a practice often resulting in significant accuracy loss that 
+                            necessitates subsequent fine-tuning efforts. This paper introduces a novel approach named Intra-Fusion, 
+                            challenging this prevailing pruning paradigm. Unlike existing methods that focus on designing meaningful neuron 
+                            importance metrics, Intra-Fusion redefines the overlying pruning procedure. Through utilizing the concepts of model 
+                            fusion and optimal transport, we leverage an agnostically given importance metric to arrive at a more  effective sparse 
+                            model representation. Notably, our approach achieves substantial accuracy recovery without the need for resource-intensive 
+                            fine-tuning, making it an efficient and promising tool for neural network compression. 
+                        </em>
+                    </p>
+            </li>
+
+            <li class="wo">
+                <details>
+                    <summary>
+                        #4 | November 12 2024,
+                        <strong>
+                        The two revolutions ... and sea-ice modelling?</strong>,
+                        <em>
+                        Tobias Finn (CEREA, École des Ponts Paris Tech).
+                        </em>
+                    </summary>
+                    <p>
+                        <em>
+                            I present the first generative diffusion surrogate model tailored to sea-ice processes. 
+                            Trained on over 20 years of coupled neXtSIM-NEMO mesoscale simulations (~12 km resolution) 
+                            in the region north of Svalbard, the model predicts 12-hour sea-ice evolution. Its inherent stochastic nature enables 
+                            robust ensemble forecasting, outperforming all baselines in forecast error while resolving the smoothing 
+                            limitations of deterministic surrogates. Crucially, I demonstrate for the first time that a fully data-driven model 
+                            can generate physically consistent forecasts akin to those from neXtSIM. While this marks a significant advancement 
+                            in realistic surrogate modelling, it incurs substantial computational costs compared to traditional approaches. 
+                            Hence, I will showcase efforts to scale the model to Arctic-wide applications, including leveraging generative diffusion 
+                            in a learned reduced space, and training at different resolutions for an enhanced performance.
+                        </em>
+                    </p>
+            </li>
+
+            <li class="wo">
+                <details>
+                    <summary>
+                        #3 | October 1st 2024,
+                        <strong>On AI hallucinations, no free lunches and the accuracy-stability trade-off in inverse problems</strong>,
+                        <em>
+                        Nina Maria Gottschling (DLR).
+                        </em>
+                    </summary>
+                    <p>
+                        <em>
+                            Methods inspired by Artificial Intelligence (AI) are starting to fundamentally change computational science 
+                            and engineering through breakthrough performances on challenging problems. However, reliability and trustworthiness 
+                            of such techniques is becoming a major concern. In inverse problems in imaging, the focus of this talk, there 
+                            is increasing empirical evidence that methods may suffer from hallucinations, i.e., false, but realistic-looking 
+                            artifacts; instability, i.e., sensitivity to perturbations in the data; and unpredictable generalization, i.e., 
+                            excellent performance on some images, but significant deterioration on others. This talk presents a potential mathematical 
+                            framework describing how and when such effects arise in arbitrary reconstruction methods, not just AI-inspired techniques. 
+                            Several of our results take the form of `no free lunch' theorems. Our results trace these effects to the kernel of the forward 
+                            operator whenever it is nontrivial, but also extend to the case when the forward operator is ill-conditioned. 
+                            Lastly, an outlook onto the relevance and utility of these findings in Earth Observation is presented. 
+                        </em>
+                    </p>
+            </li>
+
+            <li class="wo">
+                <details>
+                    <summary>
+                        #2 | June 18 2024,
+                        <strong>
+                        Efficient posterior sampling for diverse super-resolution with hierarchical VAE Prior</strong>,
+                        <em>
+                        Jean Prost (CRIStAL, Centrale Lille).
+                        </em>
+                    </summary>
+                    <p>
+                        <em>
+                            In this presentation, we will consider the problem of producing diverse super-resolved images corresponding 
+                            to a low-resolution observation. From a probabilistic perspective, this amounts to sample from the posterior distribution 
+                            of the super-resolution inverse problem.  As a prior model on the solution, we propose to use pretrained hierarchical 
+                            variational autoencoder (HVAE), a powerful class of deep generative model. We train a lightweight stochastic encoder 
+                            to encode low-resolution images in the latent space of a pretrained HVAE. At inference, we combine the low-resolution 
+                            encoder and the pretrained generative model to super-resolve an image. We demonstrate on the task of face super-resolution 
+                            that our method provides an advantageous trade-off between the computational efficiency of conditional normalizing flows 
+                            techniques and the sample quality of diffusion based methods.
+                        </em>
+                    </p>
+            </li>
+
+            <li class="wo">
+                <details>
+                    <summary>
+                        #1 | May 21 2024,
+                        <strong>
+                        Multi-modal representation learning for Earth Observation</strong>,
+                        <em>
+                        Valerio Marsocci (Geomatics Research Group, université KU Leuven).
+                        </em>
+                    </summary>
+                    <p>
+                        <em>
+                            Representation learning models gained traction as a way to leverage the vast amounts of unlabeled Earth Observation data. 
+                            However, due to the multiplicity of remote sensing sources, these models should learn sensor agnostic representations, 
+                            that generalize across sensor characteristics with minimal fine-tuning. Sensor agnosticism is strongly related to 
+                            multi-modality: more and more models deal with different kinds of data, such as MSI, coordinates, and so on. 
+                            These models should also be capable of dealing with images from different locations and different timeframes, 
+                            being spatiotemporal invariant. The talk will investigate different approaches to develop these models, such as (continual) 
+                            self-supervised learning, spanning different downstream tasks, such as semantic segmentation and domain adaptation.
+                        </em>
+                    </p>
+            </li>
+        </ul>
+        If you would like to present your work, please <a href="mailto:romain.thoreau@agroparistech.fr;" target="_blank">reach out</a>!
+    </div>
+
+
+
+        <footer>
+            <p>Photo credit: ESA, modified Sentinel data (2024), processed by ESA.</p>
+            <p>
+                Romain Thoreau - <a href="https://creativecommons.org/licenses/by-nc/2.0/fr/deed.en" target="_blank">CC-BY-NC 2.0</a> - 2025
+            </p>
+        </footer>
+
+    </body>
+</html>
